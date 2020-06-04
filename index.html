@@ -4,10 +4,12 @@
   <p>测试。。。。</p>
   x:<input type="text" id="x"/>+y:<input type="text" id="y">=result:<input type="test" id="result"/>
   <br>
-  <input type="button" onclick="jisuan();"/>
+  <input type="button" text="计算" onclick="jisuan();"/>
   <script>
     function jisuan(){
-      alert("ok");
+       var x=parseInt(document.getElementById("x").value);
+       var y=parseInt(document.getElementById("y").value);
+        document.getElementById("y").value=x+y;
     }
   </script>
 </body>
