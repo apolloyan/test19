@@ -2,14 +2,14 @@
 <head></head>
 <body>
   <p>测试。。。。</p>
-  <input type="text" id="x"/>+<input type="text" id="y">=result:<input type="test" id="result"/>
+  <input type="text" id="x" value="0"/>+<input type="text" id="y" value="0">=result:<input type="test" id="result"/>
   <br>
   <input type="button" value="计算" onclick="jisuan();"/>
   <script>
     function jisuan(){
        var x=parseInt(document.getElementById("x").value);
        var y=parseInt(document.getElementById("y").value);
-        document.getElementById("y").value=x+y;
+        document.getElementById("result").value=x+y;
     }
   </script>
 </body>
